@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PhotoWeather</string>
+    <string name="tab_text_1">Weather Info</string>
+    <string name="tab_text_2">History</string>
+    <string name="pick_city">Please pick city first</string>
+    <string name="error_image">Error getting Image</string>
+    <string name="delete_all">Delete All History ?</string>
+    <string name="delete_positive">Yes</string>
+    <string name="delete_negative">No</string>
+    <string name="temperature_format">%s °C</string>
+    <string name="error_city_not_found">City Not Found</string>
+    <string name="error_no_network">No Network Connection</string>
+    <string name="data_with_percentage">%d %%</string>
+    <string name="wind_speed">%s meter/sec</string>
+    <string name="delete_photo">Delete Photo ?</string>
+    <string name="cant_create_image">Error taking Image</string>
+    <string name="enter_city_name">Enter City Name</string>
+    <string name="get_weather_button">Get Weather</string>
+    <string name="city_view_text">City:</string>
+    <string name="clouds_view_text">Clouds:</string>
+    <string name="wind_speed_view_text">Wind Speed:</string>
+    <string name="weather_view_text">Weather:</string>
+    <string name="weather_description_view_text">Weather Description:</string>
+    <string name="temperature_view_text">Temperature:</string>
+    <string name="min_temperature__view_text">Min:</string>
+    <string name="max_temperature_view_text">Max:</string>
+    <string name="feels_like_temperature_view_text">Feels like:</string>
+    <string name="humidity_view_text">Humidity:</string>
+    <string name="no_images_to_show_yet">No Images to Show Yet</string>
+    <string name="delete_image_button">Delete</string>
+</resources>

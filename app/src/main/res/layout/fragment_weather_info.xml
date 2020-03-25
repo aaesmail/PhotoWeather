@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/city_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/find_city_button"
+            android:gravity="center"
+            android:hint="@string/enter_city_name" />
+
+        <Button
+            android:id="@+id/find_city_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/get_weather_button" />
+
+        <LinearLayout
+            android:id="@+id/data_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_edit_text"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/city_view_text" />
+
+                <TextView
+                    android:id="@+id/city"
+                    style="@style/text_weather_info_data"
+                    tools:text="Cairo" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/weather_view_text" />
+
+                <TextView
+                    android:id="@+id/main"
+                    style="@style/text_weather_info_data"
+                    tools:text="clear sky" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/weather_desc_container"
+                style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/weather_description_view_text" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    style="@style/text_weather_info_data"
+                    tools:text="clear sky" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/temperature_view_text" />
+
+                <TextView
+                    android:id="@+id/temp"
+                    style="@style/text_weather_info_data"
+                    tools:text="37 °C" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/min_temperature__view_text" />
+
+                <TextView
+                    android:id="@+id/min"
+                    style="@style/text_weather_info_data"
+                    tools:text="31 °C" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/max_temperature_view_text" />
+
+                <TextView
+                    android:id="@+id/max"
+                    style="@style/text_weather_info_data"
+                    tools:text="38 °C" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/feels_like_temperature_view_text" />
+
+                <TextView
+                    android:id="@+id/like"
+                    style="@style/text_weather_info_data"
+                    tools:text="35 °C" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/wind_speed_view_text" />
+
+                <TextView
+                    android:id="@+id/speed"
+                    style="@style/text_weather_info_data"
+                    tools:text="1.5 meter/sec" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/humidity_view_text" />
+
+                <TextView
+                    android:id="@+id/humidity"
+                    style="@style/text_weather_info_data"
+                    tools:text="100 %" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/weather_info_item">
+
+                <TextView
+                    style="@style/const_text_weather_info"
+                    android:text="@string/clouds_view_text" />
+
+                <TextView
+                    android:id="@+id/cloud"
+                    style="@style/text_weather_info_data"
+                    tools:text="15%" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="32dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:text="City Not Found" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="32dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
